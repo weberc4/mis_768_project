@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="aRecipe.RecipeSelectionController">
+   <children>
+      <AnchorPane prefHeight="600.0" prefWidth="800.0">
+         <children>
+            <Button fx:id="saveRecipe" layoutX="325.0" layoutY="497.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="154.0" text="Save Recipe">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Button>
+            <Label fx:id="ingredients" layoutX="147.0" layoutY="264.0" prefHeight="30.0" prefWidth="510.0" text="The purpose of this tool is to find a recipe which matches">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="247.0" layoutY="28.0" text="Recipe Found!" textOverrun="CLIP">
+               <font>
+                  <Font name="System Bold" size="46.0" />
+               </font>
+            </Label>
+            <Label fx:id="recipeName" layoutX="366.0" layoutY="116.0" prefHeight="30.0" prefWidth="68.0" text="RECIPE">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Button fx:id="getInstructions" layoutX="304.0" layoutY="434.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="195.0" text="Recipe Instructions">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Button>
+            <Button fx:id="getNutrition" layoutX="320.0" layoutY="367.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="164.0" text="Nutrition Facts">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Button>
+            <Label fx:id="showRows" layoutX="366.0" layoutY="170.0" prefHeight="30.0" prefWidth="68.0" text="RECIPE">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</VBox>

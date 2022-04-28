@@ -21,7 +21,7 @@ public class RecipeDAOImpl implements RecipeDAO {
             		ResultSet.CONCUR_READ_ONLY);
 			
 			
-			String sql = "SELECT * from " + CoffeeDBConstants.COFFEE_TABLE_NAME;
+			String sql = "SELECT * from " + RecipeDBConstants.RECIPE_TABLE_NAME;
             ResultSet result = stmt.executeQuery(sql);
             
             
@@ -31,9 +31,7 @@ public class RecipeDAOImpl implements RecipeDAO {
             result.first();                // Move to first row
 
             for (int row = 0; row < numRows; row++) {
-            	Recipe aRecipe = new Recipe(result.getString("Name"),
-            			result.getString("ProdNum"),
-            			result.getDouble("Price"));
+            	Recipe aRecipe = new Recipe(result.getString("
             	
             	
             	
@@ -43,12 +41,12 @@ public class RecipeDAOImpl implements RecipeDAO {
                result.next();
             }
             stmt.close();
-            CoffeeDBUtil.closeDBConnection(conn);
+            recipeDBUtil.closeDBConnection(conn);
    
 			
 		} catch (Exception ex) {
 			System.out.println("ERROR: " + ex.getMessage());
 		}
-		return coffeeList;
+		return recipeList;
 	}
 

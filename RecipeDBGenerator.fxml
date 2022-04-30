@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="aRecipe.RecipeDBGeneratorController">
+   <children>
+      <AnchorPane prefHeight="600.0" prefWidth="800.0">
+         <children>
+            <Button fx:id="saveRecipe" layoutX="325.0" layoutY="497.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="154.0" text="Save Recipe">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Button>
+            <Label layoutX="247.0" layoutY="28.0" text="Recipe Found!" textOverrun="CLIP">
+               <font>
+                  <Font name="System Bold" size="46.0" />
+               </font>
+            </Label>
+            <Label fx:id="recipeName" alignment="CENTER" layoutX="101.0" layoutY="111.0" prefHeight="44.0" prefWidth="603.0" text="RECIPE RECIPE RECIPE RECIPE RECIPE RECIPE RECIPE RECIPE RECIPE" textAlignment="CENTER" textOverrun="CENTER_ELLIPSIS" wrapText="true">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Button fx:id="getInstructions" layoutX="304.0" layoutY="434.0" mnemonicParsing="false" onAction="#getInstructions" prefHeight="44.0" prefWidth="195.0" text="Recipe Instructions">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Button>
+            <Button fx:id="getNutrition" layoutX="320.0" layoutY="367.0" mnemonicParsing="false" onAction="#getNutritionFacts" prefHeight="44.0" prefWidth="164.0" text="Nutrition Facts">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Button>
+            <Button fx:id="getRecipe" layoutX="69.0" layoutY="309.0" mnemonicParsing="false" onAction="#getPreviousRecipe" prefHeight="44.0" prefWidth="164.0" text="Previous Recipe">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Button>
+            <Label fx:id="recipeIngredients" alignment="CENTER" layoutX="232.0" layoutY="170.0" prefHeight="99.0" prefWidth="337.0" text="RECIPE INGREDIENTS, RECIPE INGREDIENTS, RECIPE INGREDIENTS, RECIPE INGREDIENTS, RECIPE INGREDIENTS," textAlignment="CENTER" textOverrun="CENTER_ELLIPSIS" wrapText="true">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Button fx:id="getRecipe1" layoutX="555.0" layoutY="309.0" mnemonicParsing="false" onAction="#getNextRecipe" prefHeight="44.0" prefWidth="164.0" text="Next Recipe">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Button>
+            <Label fx:id="recipeTime" alignment="CENTER" layoutX="233.0" layoutY="155.0" prefHeight="30.0" prefWidth="337.0" text="----------------------------------------------------------" textAlignment="CENTER" textOverrun="CENTER_ELLIPSIS" wrapText="true">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Button fx:id="backButton" layoutX="30.0" layoutY="522.0" mnemonicParsing="false" onAction="#ReturnButtonListener" prefHeight="38.0" prefWidth="189.0" text="Return to Selection">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+   </children>
+</VBox>
